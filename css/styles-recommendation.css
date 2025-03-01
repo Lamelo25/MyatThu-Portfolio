@@ -1,0 +1,11 @@
+body {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.bg-primary {
+    background-color: #3498db; /* Different primary color */
+}
+
+.neon-text {
+    color: #66ffcc; /* Neon green text */
+}
