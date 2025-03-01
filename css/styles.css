@@ -1,0 +1,288 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    transition: background-color 0.5s, color 0.5s;
+    padding-bottom: 50px; /* Prevent the footer from covering content */
+}
+
+h1, h2 {
+    text-shadow: 0 0 5px #66ffcc, 0 0 10px #66ffcc;
+}
+
+.neon-text {
+    color: #66ffcc; /* Softer neon color */
+    text-shadow: 0 0 5px #66ffcc, 0 0 10px #66ffcc, 0 0 15px #66ffcc;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .animate {
+    animation: fade-in 2s;
+  }
+  
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+.card-title {
+    color: #66ffcc;
+    text-shadow: 0 0 5px #66ffcc, 0 0 10px #66ffcc;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1e1e1e; /* Dark background */
+    transition: background-color 0.5s;
+    padding: 0.75rem 1rem; /* Adjust padding for larger screens */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #66ffcc; /* Neon color for branding and links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #66ffcc;
+}
+
+/* Light Theme Navbar */
+.light-theme .navbar {
+    background-color: #d6d6d6; /* Light gray background */
+}
+
+.light-theme .navbar-brand,
+.light-theme .navbar-nav .nav-link {
+    color: #000000; /* Black text for better contrast */
+}
+
+.light-theme .navbar-nav .nav-link:hover {
+    color: #66ffcc; /* Keep the hover effect */
+}
+
+/* Hamburger Icon Styling */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(102,255,204, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.light-theme .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0,0,0, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Certificates and Skills Sections */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: #1e1e1e;
+    border: 2px solid #66ffcc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 150px; /* Adjust width as needed */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.skill i {
+    font-size: 2em; /* Adjust icon size as needed */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skill span {
+    color: #ffffff; /* Text color */
+}
+
+/* Photoshop Images */
+.photoshop-images {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 10px; /* Space between images */
+}
+
+.photoshop-images img {
+    width: 100%; /* Make images responsive */
+    transition: transform 0.3s; /* Animation effect */
+}
+
+.photoshop-images img:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e1e1e;
+    padding: 20px 0; /* Reduced padding for a cleaner look */
+    position: relative; /* Ensure proper positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    z-index: 100; /* Ensure it's above other content */
+}
+
+footer .social-icons a {
+    color: #66ffcc; /* Neon color for branding and links */
+    text-decoration: none; /* Remove underlines from links */
+    margin: 0 10px; /* Adjust spacing between the links */
+}
+
+footer .social-icons a:hover {
+    color: #ffffff; /* Hover color */
+}
+
+/* Theme Toggle Button Styles */
+.fixed-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ffffff; /* White background for dark theme */
+    color: #000000; /* Black icon color */
+    border: 2px solid #66ffcc; /* Optional: border color */
+    border-radius: 5px; /* Optional: rounded corners */
+    padding: 10px; /* Optional: padding for better appearance */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.fixed-toggle i {
+    font-size: 1.5em;
+}
+
+/* Toggle button for light theme */
+.light-theme .fixed-toggle {
+    background-color: #000000; /* Black background for light theme */
+    color: #ffffff; /* White icon color */
+}
+
+/* Light Theme Styles */
+.light-theme {
+    background-color: #f8f9fa; /* Softer white background */
+    color: #000000; /* Black text color */
+}
+
+/* CSS for the modern-red fa-award icon in the white theme */
+.light-theme .skills-container .skill {
+    color: #B8860B ;/* DarkGoldenRod */   
+}
+
+
+/* Light theme styles for specific elements */
+.light-theme h1,
+.light-theme h2,
+.light-theme .card {
+    color: #000000;
+    text-shadow: none;
+}
+
+.light-theme .card {
+    background-color: #ffffff; /* White background for cards in light theme */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 0.5rem 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem; /* Adjust brand font size */
+    }
+
+    .navbar-collapse {
+        background-color: #1e1e1e; /* Dark background for the collapsed menu */
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center the links in the collapsed menu */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Add spacing between the links */
+    }
+
+    .navbar-nav .nav-link {
+        color: #ffffff; /* White text for links in the collapsed menu */
+    }
+
+    .light-theme .navbar-collapse {
+        background-color: #d6d6d6; /* Light gray background for light theme */
+    }
+
+    .light-theme .navbar-nav .nav-link {
+        color: #000000; /* Black text for light theme */
+    }
+
+    .social-icons a {
+        margin: 0 5px; /* Reduce margin for social icons on smaller screens */
+    }
+}
+
+@media (max-width: 767.98px) {
+    h1 {
+        font-size: 2.5rem; /* Further reduce font size for very small screens */
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2em; /* Further reduce size of social icons */
+    }
+
+    .skill {
+        width: 100%; /* Make skills full width on smaller screens */
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 1.1rem; /* Smaller font size for the brand on very small screens */
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem; /* Adjust padding for the toggler button */
+        font-size: 0.75rem; /* Adjust font size */
+    }
+
+    .navbar-toggler-icon {
+        width: 1.2em; /* Adjust width of the icon */
+        height: 1.2em; /* Adjust height of the icon */
+    }
+
+    footer p {
+        font-size: 0.9em; /* Smaller font size for footer text */
+    }
+}
